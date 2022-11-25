@@ -1,0 +1,17 @@
+{
+  "domain": "mood_light_state",
+  "name": "U+ SmartHome",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/mood_light_state",
+  "requirements": [
+    "requests==2.28.1"
+  ],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": [
+    "@bryanjuho"
+  ],
+  "iot_class": "cloud_polling"
+}
