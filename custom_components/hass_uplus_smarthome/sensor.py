@@ -1,6 +1,8 @@
-from homeassistant.components.mood_light_state.const import PowerStatus, DOMAIN
-from homeassistant.components.mood_light_state.uplus_api import PowerExtensionAPI, MoodLightAPI
 from homeassistant.helpers.entity import Entity
+
+from custom_components.hass_uplus_smarthome import DOMAIN
+from custom_components.hass_uplus_smarthome.const import PowerStatus
+from custom_components.hass_uplus_smarthome.uplus_api import PowerExtensionAPI, MoodLightAPI
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):

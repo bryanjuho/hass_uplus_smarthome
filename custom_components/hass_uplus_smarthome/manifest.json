@@ -1,5 +1,5 @@
 {
-  "domain": "mood_light_state",
+  "domain": "hass_uplus_smarthome",
   "name": "U+ SmartHome",
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/mood_light_state",
