@@ -1,6 +1,7 @@
 """Constants for the hass_uplus_smarthome integration."""
 from enum import Enum
 
+TITLE = "U+ SmartHome"
 DOMAIN = "hass_uplus_smarthome"
 
 PLATFORMS = ["light", "switch"]

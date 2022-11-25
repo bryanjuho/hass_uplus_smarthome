@@ -1,15 +1,11 @@
 {
   "domain": "hass_uplus_smarthome",
   "name": "U+ SmartHome",
-  "config_flow": true,
-  "documentation": "https://www.home-assistant.io/integrations/mood_light_state",
+  "documentation": "https://github.com/bryanjuho/hass_uplus_smarthome",
   "requirements": [
     "requests==2.28.1"
   ],
-  "ssdp": [],
-  "zeroconf": [],
-  "homekit": {},
-  "dependencies": [],
+  "version": "0.1.0",
   "codeowners": [
     "@bryanjuho"
   ],

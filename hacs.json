@@ -1,6 +1,6 @@
 {
-  "name": "U+ 스마트홈",
-  "country": "KR",
+  "name": "U+ Smarthome",
+  "country": "kr",
   "domains": ["sensor"],
   "render_readme": false
 }

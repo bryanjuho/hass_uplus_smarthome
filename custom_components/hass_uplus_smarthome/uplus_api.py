@@ -1,18 +1,9 @@
-import requests
-from . import const
+import logging
+
+_LOGGER = logging.getLogger('uplus')
 
 
-class UplusAPIBase:
-    base_url = const.UPLUS_API_BASE_URL
-
-    def __init__(self):
-        pass
-
-    async def update(self):
-        raise NotImplementedError
-
-
-class PowerExtensionAPI(UplusAPIBase):
+class PowerExtensionAPI:
 
     async def update(self):
         pass
@@ -22,11 +13,20 @@ class PowerExtensionAPI(UplusAPIBase):
         return [1, 1, 0, 0]
 
 
-class MoodLightAPI(UplusAPIBase):
+class MoodLightAPI:
+    class Light:
+        def __init__(self):
+            self.is_on = False
+            self.brightness = 0
+
+    def __init__(self):
+        self.light = self.Light()
 
     async def update(self):
         pass
 
-    @property
-    def results(self):
-        return [1, 55]
+    async def light_turn_on(self):
+        _LOGGER.info("turn_on")
+
+    async def light_turn_off(self):
+        _LOGGER.info("turn_off")
